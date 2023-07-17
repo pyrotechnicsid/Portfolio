@@ -5,6 +5,7 @@
 
 /* hero background image */
 .bgimage {
+    padding-top: 10%;
     height:100vh;
     background: url('images/heroImage.jpg');
     background-size:cover;
@@ -23,7 +24,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 9px #000000;
 }
 
 /* spacing on all sections */
