@@ -1,7 +1,7 @@
 // add class navbarDark on navbar scroll
 const header = document.querySelector('.navbar');
-const toggledark = document.querySelector('.toggledark');
 const cardbody = document.getElementsByClassName('card-body');
+const checkbox = document.getElementsByClassName('checkbox')[0];
 const body = document.body;
 
 console.log(toggledark);
@@ -14,21 +14,8 @@ navLinks.forEach((l) => {
     l.addEventListener('click', () => { new bootstrap.Collapse(menuToggle).toggle() })
 })
 
-
-function darkmode () {
-    if (body.style.backgroundColor == 'black') {
-        console.log("test")
-        body.style.cssText = `
-    background-color: white;
-    color: black;
-    `
-    for (var i = 0; i < cardbody.length; i++) {
-        cardbody[i].style.cssText = `
-        background-color: white;
-        `
-    }
-    }
-    else {
+checkbox.addEventListener("change", function() {
+    if (this.checked) {
         body.style.cssText = `
         background-color: black;
         color: white;
@@ -38,8 +25,15 @@ function darkmode () {
             background-color: #212529;
             `
         }
+    } else {
+        body.style.cssText = `
+        background-color: white;
+        color: black;
+        `
+        for (var i = 0; i < cardbody.length; i++) {
+            cardbody[i].style.cssText = `
+            background-color: white;
+            `
+        }
     }
-    
-}
-
-toggledark.addEventListener("click", darkmode);
+  });
