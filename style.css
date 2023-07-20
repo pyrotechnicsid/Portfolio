@@ -72,6 +72,10 @@
 .fab, .fas {
     color: #000000;
 }
+
+.servicesText.card {
+    height: fit-content
+}
 /* footer styling */
 #footer {
     background-color: #808080;
