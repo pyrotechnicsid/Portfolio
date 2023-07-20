@@ -4,7 +4,6 @@ const cardbody = document.getElementsByClassName('card-body');
 const checkbox = document.getElementsByClassName('checkbox')[0];
 const body = document.body;
 
-console.log(toggledark);
 header.classList.add('navbarDark');
 // collapse navbar after click on small devices
 const navLinks = document.querySelectorAll('.nav-item')
