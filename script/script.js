@@ -3,6 +3,8 @@ const header = document.querySelector('.navbar');
 const cardbody = document.getElementsByClassName('card-body');
 const checkbox = document.getElementsByClassName('checkbox')[0];
 const body = document.body;
+const fas = document.getElementsByClassName('fas');
+const fab = document.getElementsByClassName('fab');
 
 header.classList.add('navbarDark');
 // collapse navbar after click on small devices
@@ -24,6 +26,16 @@ checkbox.addEventListener("change", function() {
             background-color: #212529;
             `
         }
+        for (var i = 0; i < fas.length; i++) {
+            fas[i].style.cssText = `
+            color: white;
+            `
+        }
+        for (var i = 0; i < fab.length; i++) {
+            fab[i].style.cssText = `
+            color: white;
+            `
+        }
     } else {
         body.style.cssText = `
         background-color: white;
@@ -32,6 +44,16 @@ checkbox.addEventListener("change", function() {
         for (var i = 0; i < cardbody.length; i++) {
             cardbody[i].style.cssText = `
             background-color: white;
+            `
+        }
+        for (var i = 0; i < fas.length; i++) {
+            fas[i].style.cssText = `
+            color: black;
+            `
+        }
+        for (var i = 0; i < fab.length; i++) {
+            fab[i].style.cssText = `
+            color: black;
             `
         }
     }
