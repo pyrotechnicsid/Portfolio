@@ -3,6 +3,11 @@
     background-color: black;
 }
 
+.test34 {
+    background-color: black;
+    color: white;
+}
+
 /* hero background image */
 .bgimage {
     padding-top: 10%;
@@ -51,6 +56,9 @@
     text-align: center;
     width: 100%;
 }
+.card-body{
+background-color: #212529;
+}
 .card-title {
     text-align: center;
 }
@@ -70,7 +78,7 @@
     color: #008000;
 }
 .fab, .fas {
-    color: #000000;
+    color:white; 
 }
 
 .servicesText.card {
