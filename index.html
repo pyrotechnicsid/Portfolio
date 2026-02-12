@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddhant Bose — Developer & IT Specialist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#home" class="nav-logo">S<span class="logo-dot">.</span>B</a>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#certifications" class="nav-link">Certs</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon" id="themeIcon"></i>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== MOBILE MENU ========== -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-inner">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#experience" class="mobile-link">Experience</a>
+            <a href="#certifications" class="mobile-link">Certifications</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-content">
+            <div class="hero-label">Full Stack Developer & IT Specialist</div>
+            <h1 class="hero-title">
+                Hi! I'm <span class="hero-name">Sid</span><span class="hero-dot">.</span>
+            </h1>
+            <p class="hero-subtitle">I build robust web applications and manage enterprise IT infrastructure — from React frontends to Active Directory environments.</p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-down-long"></i></a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">2000+</span>
+                    <span class="stat-label">Hours of Coding</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">Full Stack</span>
+                    <span class="stat-label">Development</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">Army</span>
+                    <span class="stat-label">Veteran</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">01</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-col">
+                    <div class="about-image-wrapper">
+                        <img src="images/about.jpg" alt="Siddhant Bose" class="about-image">
+                        <div class="about-image-border"></div>
+                    </div>
+                </div>
+                <div class="about-text-col">
+                    <p class="about-intro">Hello! My name is <strong>Siddhant Bose</strong> — or you can call me <strong>Sid</strong>. I am a highly motivated army veteran and efficient problem solver with over 2000 hours of coding experience.</p>
+                    <p class="about-body">I focus on both frontend and backend applications, along with many years of experience troubleshooting and supporting end-user hardware and network-related issues. I am proficient across Windows, MacOS, iOS, Android, and Microsoft Office.</p>
+                    <div class="skills-grid">
+                        <div class="skill-group">
+                            <h4 class="skill-group-title">Frontend & Languages</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">JavaScript (ES5/ES6)</span>
+                                <span class="skill-tag">React.js</span>
+                                <span class="skill-tag">HTML5</span>
+                                <span class="skill-tag">CSS3</span>
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <h4 class="skill-group-title">Backend & Database</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Express.js</span>
+                                <span class="skill-tag">PostgreSQL / MySQL</span>
+                                <span class="skill-tag">RESTful APIs</span>
+                                <span class="skill-tag">Bcrypt Auth</span>
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <h4 class="skill-group-title">IT & Infrastructure</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Windows Server 2019</span>
+                                <span class="skill-tag">Active Directory / Azure</span>
+                                <span class="skill-tag">DHCP / DNS</span>
+                                <span class="skill-tag">VPN</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="about-cta">I specialize in creating software for clients ranging from individuals and small businesses to large enterprise corporations. Have a project? <a href="#contact">Let's talk.</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EXPERIENCE ========== -->
+    <section class="section section-alt" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">02</span>
+                <h2 class="section-title">Experience</h2>
+            </div>
+            <div class="exp-grid">
+                <div class="exp-card" data-anim="fade-up" style="--delay: 0">
+                    <div class="exp-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3 class="exp-card-title">Frontend & Backend</h3>
+                    <p>Proficient with developing user-friendly websites, applications and RESTful APIs using React.js, Express.js, HTML, CSS and vanilla JavaScript. Experience with building applications with full CRUD functionality.</p>
+                </div>
+                <div class="exp-card" data-anim="fade-up" style="--delay: 1">
+                    <div class="exp-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                    <h3 class="exp-card-title">UI / UX Design</h3>
+                    <p>Produced high-quality wireframes to conceptualize comprehensive UI/UX design strategy for brands. Designed custom UI elements like navigation menus and search boxes to create cohesive user experiences.</p>
+                </div>
+                <div class="exp-card" data-anim="fade-up" style="--delay: 2">
+                    <div class="exp-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                    <h3 class="exp-card-title">Web App Deployment</h3>
+                    <p>Deployed and scaled numerous applications on Heroku, Netlify, Render, Firebase & AWS for production environments. Provided development support and troubleshooting on deployment platforms.</p>
+                </div>
+                <div class="exp-card" data-anim="fade-up" style="--delay: 3">
+                    <div class="exp-icon"><i class="fa-solid fa-database"></i></div>
+                    <h3 class="exp-card-title">SQL Database</h3>
+                    <p>Planned and designed entity relationship diagrams using Figma and Canva. Proficient with creating custom MySQL databases with complex relationship structures handling thousands of queries simultaneously.</p>
+                </div>
+                <div class="exp-card" data-anim="fade-up" style="--delay: 4">
+                    <div class="exp-icon"><i class="fa-solid fa-gear"></i></div>
+                    <h3 class="exp-card-title">System Administration</h3>
+                    <p>Provided technical support to various businesses across multiple fields including troubleshooting hardware/software issues and configuring devices across Windows, MacOS, iOS, Android, and Microsoft Office.</p>
+                </div>
+                <div class="exp-card" data-anim="fade-up" style="--delay: 5">
+                    <div class="exp-icon"><i class="fa-solid fa-network-wired"></i></div>
+                    <h3 class="exp-card-title">Networking</h3>
+                    <p>Configured and installed network devices and services including routers, switches, firewalls, load balancers, VPN and QoS. Provided Level 1-3 support including VOIP and fax service troubleshooting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CERTIFICATIONS ========== -->
+    <section class="section" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">03</span>
+                <h2 class="section-title">Certifications</h2>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card" data-anim="fade-up" style="--delay: 0">
+                    <div class="cert-image-wrapper">
+                        <img src="images/cert1.jpg" alt="Advanced Software Engineering Immersive" class="cert-image">
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Advanced Software Engineering Immersive</h3>
+                        <p class="cert-desc">18-week software engineering immersive program with over 1500 hours of coding, full-stack development using JavaScript, React.js, Express.js, PostgreSQL in an Agile environment.</p>
+                        <a href="https://media.licdn.com/dms/image/D562DAQFI4FdBhdNv8g/profile-treasury-document-images_1280/1/1686849165870?e=1690416000&v=beta&t=kJqDt1NBSBHkQTmY6yqe3jsXjIYR_zuGC1LMwP0h018" class="cert-link" target="_blank" rel="noopener">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="cert-card" data-anim="fade-up" style="--delay: 1">
+                    <div class="cert-image-wrapper">
+                        <img src="images/cert2.jpg" alt="Windows Server 2019 Administration" class="cert-image">
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Windows Server 2019 Administration</h3>
+                        <p class="cert-desc">Covers topics that every systems administrator, network administrator and/or Cloud engineer should know when managing Windows Server 2019/20H2.</p>
+                        <a href="https://www.udemy.com/certificate/UC-2d3cd90e-8b80-4e3c-9aed-77ff82baaf0c/" class="cert-link" target="_blank" rel="noopener">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="cert-card" data-anim="fade-up" style="--delay: 2">
+                    <div class="cert-image-wrapper">
+                        <img src="images/cert3.jpg" alt="Microsoft Office 365 Administration" class="cert-image">
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Microsoft Office 365 Administration</h3>
+                        <p class="cert-desc">Focuses on the administration, configuration, troubleshooting and operations of the Microsoft Office 365 platform.</p>
+                        <a href="https://www.udemy.com/certificate/UC-37af6d1b-e0d0-43e3-b4b7-a73780231601/" class="cert-link" target="_blank" rel="noopener">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section class="section section-alt" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">04</span>
+                <h2 class="section-title">Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card" data-anim="fade-up" style="--delay: 0">
+                    <div class="project-image-wrapper">
+                        <img src="images/Project1.jpg" alt="Tech Port" class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Team-Cache-Out/tech-port" class="project-overlay-link" target="_blank" rel="noopener">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Tech Port — Ticket Management System</h3>
+                        <p class="project-desc">Worked with an agile team of 7 full stack developers to create a ticketing system with full CRUD operations. Supports user authentication and authorization using bcrypt with user persistence.</p>
+                        <div class="project-tech">
+                            <span>React</span><span>Express</span><span>PostgreSQL</span><span>Bcrypt</span>
+                        </div>
+                        <a href="https://github.com/Team-Cache-Out/tech-port" class="project-link" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="project-card" data-anim="fade-up" style="--delay: 1">
+                    <div class="project-image-wrapper">
+                        <img src="images/Project2.jpg" alt="N20W Member Portal" class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://n20wmembers.herokuapp.com/" class="project-overlay-link" target="_blank" rel="noopener">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">N20W Member — Admin Portal</h3>
+                        <p class="project-desc">Helped a local game shop manage their membership accounts. Created a web app and RESTful API with full CRUD functionality using React, Express and PostgreSQL.</p>
+                        <div class="project-tech">
+                            <span>React</span><span>Express</span><span>PostgreSQL</span><span>REST API</span>
+                        </div>
+                        <a href="https://n20wmembers.herokuapp.com/" class="project-link" target="_blank" rel="noopener">View Live <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="project-card" data-anim="fade-up" style="--delay: 2">
+                    <div class="project-image-wrapper">
+                        <img src="images/Project3.jpg" alt="DigiDeck" class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://digideck.netlify.app/" class="project-overlay-link" target="_blank" rel="noopener">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">DigiDeck — Digimon TCG Database</h3>
+                        <p class="project-desc">Created a web app with AJAX functionality to fetch up-to-date Digimon trading card game data and serve it to users in an efficient way.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span><span>AJAX</span><span>REST API</span><span>CSS3</span>
+                        </div>
+                        <a href="https://digideck.netlify.app/" class="project-link" target="_blank" rel="noopener">View Live <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">05</span>
+                <h2 class="section-title">Contact Me</h2>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-text">
+                    <p class="contact-intro">Interested in working together or have a question? I'd love to hear from you. Drop me a message and I'll get back to you as soon as I can.</p>
+                    <div class="contact-links">
+                        <a href="https://github.com/pyrotechnicsid" class="contact-social" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/siddhant-bose/" class="contact-social" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="you@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span class="footer-logo">S<span class="logo-dot">.</span>B</span>
+            <p>&copy; 2026 Siddhant Bose. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/pyrotechnicsid" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/siddhant-bose/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/app.js"></script>
+</body>
+</html>
