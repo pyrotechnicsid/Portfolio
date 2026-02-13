@@ -129,6 +129,41 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // ---------- IMAGE MODAL FOR CERTIFICATES ----------
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    const modalClose = document.getElementById('modalClose');
+    const certImages = document.querySelectorAll('.cert-image');
+
+    // Open modal when clicking cert images
+    certImages.forEach(img => {
+        img.addEventListener('click', () => {
+            modalImage.src = img.src;
+            modalImage.alt = img.alt;
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    // Close modal functions
+    const closeModal = () => {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    };
+
+    // Close on X button
+    modalClose.addEventListener('click', closeModal);
+
+    // Close on overlay click
+    modal.querySelector('.modal-overlay').addEventListener('click', closeModal);
+
+    // Close on ESC key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal();
+        }
+    });
+
     // ---------- CONTACT FORM (Web3Forms) ----------
     const form = document.getElementById('contactForm');
     if (form) {
