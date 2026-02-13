@@ -129,22 +129,51 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ---------- CONTACT FORM (basic handler) ----------
+    // ---------- CONTACT FORM (Web3Forms) ----------
     const form = document.getElementById('contactForm');
     if (form) {
-        form.addEventListener('submit', (e) => {
+        form.addEventListener('submit', async (e) => {
             e.preventDefault();
             const btn = form.querySelector('button[type="submit"]');
             const originalText = btn.innerHTML;
-            btn.innerHTML = 'Message Sent! <i class="fa-solid fa-check"></i>';
+
+            // Show loading state
+            btn.innerHTML = 'Sending... <i class="fa-solid fa-spinner fa-spin"></i>';
             btn.disabled = true;
             btn.style.opacity = '0.7';
-            setTimeout(() => {
-                btn.innerHTML = originalText;
-                btn.disabled = false;
-                btn.style.opacity = '1';
-                form.reset();
-            }, 3000);
+
+            // Get form data
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    // Success message
+                    btn.innerHTML = 'Message Sent! <i class="fa-solid fa-check"></i>';
+                    form.reset();
+                    setTimeout(() => {
+                        btn.innerHTML = originalText;
+                        btn.disabled = false;
+                        btn.style.opacity = '1';
+                    }, 3000);
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                // Error message
+                btn.innerHTML = 'Error! Try Again <i class="fa-solid fa-xmark"></i>';
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                    btn.style.opacity = '1';
+                }, 3000);
+            }
         });
     }
 });
