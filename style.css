@@ -22,10 +22,8 @@
     --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     --max-width: 1200px;
     --nav-height: 72px;
-}
 
-/* ---------- DARK THEME (default) ---------- */
-[data-theme="dark"] {
+    /* Default to dark theme variables */
     --bg-primary: #0a0a0b;
     --bg-secondary: #111113;
     --bg-card: #16161a;
@@ -49,7 +47,8 @@
 }
 
 /* ---------- LIGHT THEME ---------- */
-[data-theme="light"] {
+[data-theme="light"],
+:root[data-theme="light"] {
     --bg-primary: #fafaf9;
     --bg-secondary: #f2f2f0;
     --bg-card: #ffffff;

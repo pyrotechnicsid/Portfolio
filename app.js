@@ -13,17 +13,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeIcon = document.getElementById('themeIcon');
     const html = document.documentElement;
 
+    function getSavedTheme() {
+        try { return localStorage.getItem('theme'); } catch(e) { return null; }
+    }
+
+    function saveTheme(theme) {
+        try { localStorage.setItem('theme', theme); } catch(e) {}
+    }
+
+    function applyTheme(theme) {
+        html.setAttribute('data-theme', theme);
+        document.body.setAttribute('data-theme', theme);
+        updateIcon(theme);
+    }
+
     // Load saved theme or default to dark
-    const savedTheme = localStorage.getItem('theme') || 'dark';
-    html.setAttribute('data-theme', savedTheme);
-    updateIcon(savedTheme);
+    const savedTheme = getSavedTheme() || 'dark';
+    applyTheme(savedTheme);
 
     themeToggle.addEventListener('click', () => {
         const current = html.getAttribute('data-theme');
         const next = current === 'dark' ? 'light' : 'dark';
-        html.setAttribute('data-theme', next);
-        localStorage.setItem('theme', next);
-        updateIcon(next);
+        applyTheme(next);
+        saveTheme(next);
     });
 
     function updateIcon(theme) {
